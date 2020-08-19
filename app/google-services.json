@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "950804972363",
+    "firebase_url": "https://sdlab3.firebaseio.com",
+    "project_id": "sdlab3",
+    "storage_bucket": "sdlab3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950804972363:android:f489ebd3203b6991d71ece",
+        "android_client_info": {
+          "package_name": "com.example.offlineproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950804972363-l3j0faut8s84ooh456jtp8nr4d8fm4rq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBbGbljGmAzNB8Gl7p4_zpAG4YvOzkyPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950804972363-l3j0faut8s84ooh456jtp8nr4d8fm4rq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
