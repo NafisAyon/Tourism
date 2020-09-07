@@ -44,6 +44,11 @@ public class MainActivity3 extends AppCompatActivity{
         startActivity(weather);
     }
 
+    public void rate(View v){
+        Intent rate= new Intent(MainActivity3.this,rate.class);
+        startActivity(rate);
+    }
+
     public void logout(View v) {
         Intent logoutIntent = new Intent(MainActivity3.this, MainActivity.class);
         startActivity(logoutIntent);
