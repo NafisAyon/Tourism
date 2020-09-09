@@ -27,6 +27,7 @@ public class currencyconverter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.currencyconverter);
 
+
         //Initialization
         currencyConverted = (EditText) findViewById(R.id.currency_converted);
         currencyToBeConverted = (EditText) findViewById(R.id.currency_to_be_converted);

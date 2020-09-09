@@ -20,6 +20,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+
         Toast.makeText(Main2Activity.this, "Login Successful", Toast.LENGTH_SHORT).show();
 
         logout = (Button) findViewById(R.id.logout);

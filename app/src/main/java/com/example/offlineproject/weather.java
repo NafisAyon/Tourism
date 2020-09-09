@@ -27,6 +27,7 @@ public class weather extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.weather);
 
+
         search = findViewById(R.id.search);
         tempText = findViewById(R.id.tempText);
         descText = findViewById(R.id.descText);

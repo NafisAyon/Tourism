@@ -24,6 +24,7 @@ public class MainActivity3 extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_main_3);
 
+
         Toast.makeText(MainActivity3.this, "Login Successful", Toast.LENGTH_SHORT).show();
 
         editCard = (CardView)findViewById(id.edit_id);
@@ -47,6 +48,11 @@ public class MainActivity3 extends AppCompatActivity{
     public void rate(View v){
         Intent rate= new Intent(MainActivity3.this,rate.class);
         startActivity(rate);
+    }
+
+    public void search(View v){
+        Intent search= new Intent(MainActivity3.this,searchbar.class);
+        startActivity(search);
     }
 
     public void logout(View v) {
