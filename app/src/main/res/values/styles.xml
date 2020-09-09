@@ -2,7 +2,7 @@
 <resources>
     <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
 
-        <item name="colorPrimary">#FFC107</item>
+        <item name="colorPrimary">#8A074DFF</item>
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">#045695</item>
     </style>

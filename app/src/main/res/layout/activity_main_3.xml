@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="#fcfcfc"
+    android:background="#fff"
     android:gravity="center"
     android:id="@+id/ll">
     <TextView
@@ -17,7 +17,7 @@
         android:textAlignment="center"
         android:textColor="#fff"
         android:textSize="30dp"
-        android:background="@color/coloryellow"/>
+        android:background="#8A074DFF"/>
     <LinearLayout
         android:clipToPadding="false"
         android:gravity="center"
@@ -48,6 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
+                    android:textColor="#000"
                     android:layout_marginTop="10dp"
                     android:text="Tour Guide"/>
                 <View
@@ -59,9 +60,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:textColor="#000"
                     android:text="Search for travel places"
-                    android:padding="5dp"
-                    android:textColor="@android:color/darker_gray"/>
+                    android:padding="5dp"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -88,6 +89,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
+                    android:textColor="#000"
                     android:layout_marginTop="10dp"
                     android:text="Review"/>
                 <View
@@ -101,7 +103,7 @@
                     android:gravity="center"
                     android:text="Please rate our app"
                     android:padding="5dp"
-                    android:textColor="@android:color/darker_gray"/>
+                    android:textColor="#000"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -136,6 +138,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
+                    android:textColor="#000"
                     android:layout_marginTop="10dp"
                     android:text="Weather Forecast"/>
                 <View
@@ -147,7 +150,7 @@
                     android:gravity="center"
                     android:text="Check weather forecast of today"
                     android:padding="5dp"
-                    android:textColor="@android:color/darker_gray"/>
+                    android:textColor="#000"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -177,6 +180,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:textColor="#000"
                     android:text="Currency Converter"
                     android:textStyle="bold" />
 
@@ -191,7 +195,7 @@
                     android:gravity="center"
                     android:text="Check Certain Currency"
                     android:padding="5dp"
-                    android:textColor="@android:color/darker_gray"/>
+                    android:textColor="#000"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -227,6 +231,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
+                    android:textColor="#000"
                     android:layout_marginTop="10dp"
                     android:text="Logout"/>
                 <View
@@ -240,7 +245,7 @@
                     android:gravity="center"
                     android:text="Logout your Profile"
                     android:padding="5dp"
-                    android:textColor="@android:color/darker_gray"/>
+                    android:textColor="#000"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

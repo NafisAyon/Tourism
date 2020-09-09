@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
-            android:textColor="@color/colordark" />
+            android:textColor="#000"/>
 
         <EditText
             android:id="@+id/password"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:textColor="@color/colordark"/>
+            android:textColor="#000"/>
 
         <Button
             android:id="@+id/loginButton"
