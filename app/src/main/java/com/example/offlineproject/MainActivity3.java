@@ -55,6 +55,11 @@ public class MainActivity3 extends AppCompatActivity{
         startActivity(search);
     }
 
+    public void picture(View v){
+        Intent search= new Intent(MainActivity3.this,searchbar.class);
+        startActivity(search);
+    }
+
     public void logout(View v) {
         Intent logoutIntent = new Intent(MainActivity3.this, MainActivity.class);
         startActivity(logoutIntent);
