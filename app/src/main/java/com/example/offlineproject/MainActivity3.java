@@ -56,7 +56,7 @@ public class MainActivity3 extends AppCompatActivity{
     }
 
     public void picture(View v){
-        Intent search= new Intent(MainActivity3.this,searchbar.class);
+        Intent search= new Intent(MainActivity3.this,MainActivity6.class);
         startActivity(search);
     }
 

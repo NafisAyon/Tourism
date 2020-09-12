@@ -3,6 +3,8 @@
     package="com.example.offlineproject">
 
     <application
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:allowBackup="true"
         android:icon="@mipmap/travel"
         android:label="@string/app_name"
@@ -13,14 +15,18 @@
         <activity android:name=".SignUp" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".MainActivity3" />
+        <activity android:name=".MainActivity6"/>
         <activity android:name=".currencyconverter" />
         <activity android:name=".weather" />
         <activity android:name=".searchbar" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".IntroActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
     </application>
