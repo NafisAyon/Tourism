@@ -1,7 +1,5 @@
 package com.example.offlineproject;
 
-import android.text.Layout;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,19 +14,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> implements Filterable {
 
     private static final String TAG = "RecyclerAdapter";
-    List<String> moviesList;
-    List<String> moviesListAll;
+    List<String> hotelList;
+    List<String> hotelListAll;
 
-    public RecyclerAdapter(List<String> moviesList) {
-        this.moviesList = moviesList;
-        moviesListAll = new ArrayList<>();
-        moviesListAll.addAll(moviesList);
+    public RecyclerAdapter(List<String> hotelList) {
+        this.hotelList = hotelList;
+        hotelListAll = new ArrayList<>();
+        hotelListAll.addAll(hotelList);
     }
 
     @NonNull
@@ -43,12 +40,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.rowCountTextView.setText(String.valueOf(position));
-        holder.textView.setText(moviesList.get(position));
+        holder.textView.setText(hotelList.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return moviesList.size();
+        return hotelList.size();
     }
 
     @Override
@@ -66,9 +63,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             List<String> filteredList = new ArrayList<>();
 
             if (charSequence == null || charSequence.length() == 0) {
-                filteredList.addAll(moviesListAll);
+                filteredList.addAll(hotelListAll);
             } else {
-                for (String movie: moviesListAll) {
+                for (String movie: hotelListAll) {
                     if (movie.toLowerCase().contains(charSequence.toString().toLowerCase())) {
                         filteredList.add(movie);
                     }
@@ -83,8 +80,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         //Automatic on UI thread
         @Override
         protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
-            moviesList.clear();
-            moviesList.addAll((Collection<? extends String>) filterResults.values);
+            hotelList.clear();
+            hotelList.addAll((Collection<? extends String>) filterResults.values);
             notifyDataSetChanged();
         }
     };
@@ -109,7 +106,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
         @Override
         public void onClick(View view) {
-            Toast.makeText(view.getContext(), moviesList.get(getAdapterPosition()), Toast.LENGTH_SHORT).show();
+            Toast.makeText(view.getContext(), hotelList.get(getAdapterPosition()), Toast.LENGTH_SHORT).show();
         }
     }
 }
